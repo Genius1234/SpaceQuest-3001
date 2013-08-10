@@ -2,8 +2,8 @@
 using namespace std;
 
 void broughtIntoShip();
-void getHelmet();
-void getSpacePony();
+void getnothing();
+void sacrificethyself();
 
 int main(){
     char repeat;
@@ -36,16 +36,16 @@ int main(){
         cout<<"Okay, fine. I guess I'll help you."<<endl;
         cout<<"Which would you like?"<<endl;
         cout<<"1. For us to bring you into our ship."<<endl;
-        cout<<"2. A helmet."<<endl;
-        cout<<"3. A majestic, air-producing, space pony."<<endl;
+        cout<<"2. Get nothing."<<endl;
+        cout<<"3. Ask for helmet"<<endl;
         cin>>choice;
         switch(choice){
             case 1:
                 broughtIntoShip(); break;
             case 2:
-                getHelmet(); break;
+                getnothing(); break;
             case 3:
-                getSpacePony(); break;
+                sacrificethyself(); break;
             default:
                 cout<<"Alright, fine! You wanna play that way?! You can just stay out there. I tried! Good luck with the head exploding... Jerk..."<<endl;
         }
@@ -57,12 +57,26 @@ int main(){
 
 void broughtIntoShip(){
     cout<<"You made it into the ship..."<<endl;
+    cout<<"Oh no Gerald is being attacked by aliens."<<endl;
+    cout<<"1.Risk your life and save Gerald"<<endl<<"2.Stay and look at what the alien does"<<endl<<"You remember when Gerald hurt you by reading your diary aloud"<<endl;
+    
+    int decision=0;
+    
+    if(decision==1){
+        cout<<"You save Gerald, but you get killed by the alien.\n"<<endl;
+    }else if(decision==2){
+        cout<<"The Alien kills Gerald, and everyone is scared to death of the alien"<<endl;
+    }else if(decision==3){
+        cout<<"You enchorage the alien to hurt Gerald, and the alien takes you on his side"<<endl;
+    }else{
+        cout<<"Gerald is killed and the alien looks at you"<<endl;
+    }
+
+void getnothing(){
+    cout<<"You die and your head explodes\n You suck at this game idiot."<<endl;
 }
 
-void getHelmet(){
-    cout<<"You get a helmet...\n But you're still floating in space...\n Things don't look great for you..."<<endl;
+void sacrificethyself(){
+    cout<<"You get the helmet, but an alien starts beating you with a stick, and sense the alien dies when he breathes oxygen you put it on him and you die\n your a hero."<<endl;
 }
 
-void getSpacePony(){
-    cout<<"You got a freakin' awesome, air-producing, moss-covered, three-handled, family space pony...\n Looks like you're set."<<endl;
-}
